@@ -1,0 +1,130 @@
+header {
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+.navbar .menu-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar .menu-links a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #7A7A7A;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar .menu-links a:hover {
+    color: #FF7F50;
+}
+
+.navbar .menu-links .language-item a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.navbar .menu-links .language-item span {
+    font-size: 1.3rem;
+}
+
+.navbar .menu-links .join-btn a {
+    border: 1px solid #FF7F50;
+    color: #7A7A7A;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+
+.navbar .menu-links .join-btn a:hover {
+    color: #fff;
+    background: #FF7F50;
+    border-color: transparent;
+}
+
+.navbar #hamburger-btn {
+    color: #000;
+    font-size: 1.7rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar #close-menu-btn {
+    color: #000;
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    header.show-mobile-menu::before {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+    .navbar :is(#hamburger-btn, #close-menu-btn) {
+        display: block;
+    }
+
+    .navbar .menu-links {
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        width: 100%;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        display: block;
+        padding: 75px 40px 0;
+        transition: left 0.2s ease;
+        z-index: 1000;
+    }
+
+    header.show-mobile-menu .navbar .menu-links {
+        left: 0;
+    }
+
+    .navbar .menu-links li {
+        margin-bottom: 30px;
+    }
+
+    .navbar .menu-links a {
+        color: #000;
+        font-size: 1.1rem;
+    }
+
+    .navbar .menu-links .join-btn a:hover {
+        background: #FF7F50;
+        color: #fff;
+    }
+}

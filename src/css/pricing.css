@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-reg {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+}
+
+.crimson-pro-font {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.head-text {
+    font-size: 30px;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+.free {
+    color: #FF7F50;
+    font-size: 24px;
+}
+
+.fa-check {
+    color: #FF7F50;
+}
+
+.card-section {
+    margin: 40px 0;
+}
+
+.pricing-container {
+    padding: 20px 40px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.pricing-container .card {
+    padding: 20px 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.pricing-btn {
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+.second-card {
+    border: 3px solid #FF7F50;
+}
+
+.tag {
+    background-color: #FCBDAA;
+    color: #FF6131;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+@media(max-width: 810px) {
+    .pricing-container {
+      display: block;
+    }
+  
+    .pricing-container .card {
+      margin-bottom: 20px;
+    }
+  
+  }
+  @media screen and (max-width: 900px) {
+    .pricing-container {
+      display: block;
+    }
+  
+    .pricing-container .card {
+      margin-bottom: 20px;
+    }
+  }
+

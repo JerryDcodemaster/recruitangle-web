@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer {
+  background-color: #CAE1C1;
+  padding: 70px 20px 40px 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 35px;
+  color: #0A142F;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #FF7F50;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #0A142F;
+  font-weight: 300;
+  display: block;
+  margin-left: -30px;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+    color: #FF7F50;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #CAE1C1;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000;
+    border: #ffffff 1px solid;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    background-color: #000;
+    color: #CAE1C1;
+}
+
+.terms a {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #0A142F;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+.terms a:hover {
+    padding-left: 3px;
+    color: #FF7F50;
+}
+
+/* .social-links {
+    width: 100%;
+  } */
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #CAE1C1;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000;
+    border: #ffffff 1px solid;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background-color: #000;
+    color: #CAE1C1;
+}
+
+.mail-box {
+  background-color: #A1BE95;
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+
+.mail-box h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 15px;
+  color: #0A142F;
+  position: relative;
+}
+
+.mail-box input {
+  padding: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #7A7A7A;
+  outline: 0;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.arrow-btn {
+  background-color: #FF7F50;
+  color: #ffffff;
+  width: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* responsiveness */
+@media(max-width: 810px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .split {
+      display: block;
+    }
+    .arrow-btn {
+      width: 100px;
+    }
+    .footer {
+      padding: 70px 40px 40px 40px;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* .terms-icon-cont {
+        margin-left: 250px;
+    } */
+
+    .terms {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -35px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+    .terms {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+    }
+    .arrow-btn {
+      width: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+  .split {
+    display: block;
+  }
+  .mail-box {
+    margin-top: 20px;
+  }
+}
