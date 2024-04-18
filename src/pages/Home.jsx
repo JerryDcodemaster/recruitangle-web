@@ -1,5 +1,8 @@
 import React from 'react';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import ImageSlider from '../components/ImageSlider';
+import Carousel from '../components/Carousel';
+import ExpertsCard from '../components/ExpertsCard';
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -79,20 +82,7 @@ const Home = () => {
       
       <section className='section-2 mb-5'>
         <h2 className="fw-bold crimson-pro mb-5">Popular Services</h2>
-        <div class="row gap-3 gap-xl-0 services-card">
-          <div class="col-md-5 col-xl-3 card-transit">
-            <img src="./images/card-1.png" alt="" />
-          </div>
-          <div class="col-md-5 col-xl-3 card-transit">
-            <img src="./images/card-2.png" alt="" />
-          </div>
-          <div class="col-md-5 col-xl-3 card-transit">
-            <img src="./images/card-3.png" alt="" />
-          </div>
-          <div class="col-md-5   col-xl-3 card-transit">
-            <img src="./images/card-4.png" alt="" />
-          </div>
-        </div>
+        <ImageSlider />
       </section>
 
     <div className='section-3'>
@@ -116,39 +106,39 @@ const Home = () => {
       </div>
 
       <section className="section-4">
-        <h2 className="fw-bold crimson-pro mb-5">We've got the Experts you need</h2>
-        <div class="row">
-          <div className="col-xl col-sm-6 col-md card-logo">
+        <h2 className="fw-bold crimson-pro mb-5 sect-4-txt">We've got the Experts you need</h2>
+        <div class="row card-row-1">
+          <div className="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b1.png" alt="" />
           </div>
-          <div className="col-xl col-sm-6 col-md card-logo">
+          <div className="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b2.png" alt="" />
           </div>
-          <div className="col-xl col-sm-6 col-md card-logo">
+          <div className="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b3.png" alt="" />
           </div>
-          <div className="col-xl col-sm-6 col-md card-logo">
+          <div className="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b4.png" alt="" />
           </div>
-          <div className="col-xl col-sm-6 col-md card-logo">
+          <div className="col-xl col-md col-12 card-logo">
             <img src="./images/brands/b5.png" alt="" />
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-xl col-sm-6 col-md card-logo">
+        <div class="row card-row-2">
+          <div class="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b6.png" alt="" />
           </div>
-          <div class="col-xl col-sm-6 col-md card-logo">
+          <div class="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b7.png" alt="" />
           </div>
-          <div class="col-xl col-sm-6 col-md card-logo">
+          <div class="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b8.png" alt="" />
           </div>
-          <div class="col-xl col-sm-6 col-md card-logo">
+          <div class="col-xl col-md col-6 card-logo">
             <img src="./images/brands/b9.png" alt="" />
           </div>
-          <div class="col-xl col-sm-6 col-md card-logo">
+          <div class="col-xl col-md col-12 card-logo">
             <img src="./images/brands/b10.png" alt="" />
           </div>
         </div>
@@ -173,71 +163,7 @@ const Home = () => {
       </div>
 
       <section className='section-6 mb-5'>
-        <div id="carouselExample" className="carousel slide">
-          <div className="carousel-inner">
-            <div className="carousel-item active d-flex text-white gap-3 align-items-center">
-              <img src="./images/carousel-image.png" className="d-block w-50" alt="..." />
-
-              <div className="w-50 d-block align-items-center">
-                <p className="d-flex justify-content-left gap-3">
-                  <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
-                  <span className='text-dark'>|</span>
-                  <span className='fw-bold text-dark'>XYZ Tech Solutions</span>
-                </p>
-                {/* <img src="./images/experts-re.png" alt="" /> */}
-                <span className="carousel-text">
-                  “The experts on RecruitAngle are the best of the best! They’ve made our hiring process smooth and we don’t need to vet candidates ourselves. This has been an amazing experience.”
-                </span>
-              </div>
-              
-            </div>
-
-            <div className="carousel-item d-flex text-white gap-3 align-items-center">
-              <img src="./images/carousel-image.png" className="d-block w-50" alt="..." />
-
-              <div className="w-50 d-block align-items-center">
-                <p className="d-flex justify-content-left gap-3">
-                  <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
-                  <span className='text-dark'>|</span>
-                  <span className='fw-bold text-dark'>XYZ Tech Solutions</span>
-                </p>
-
-                <span className="carousel-text">
-                  “The experts on RecruitAngle are the best of the best! They’ve made our hiring process smooth and we don’t need to vet candidates ourselves. This has been an amazing experience.”
-                </span>
-              </div>
-              
-            </div>
-
-            <div className="carousel-item d-flex text-white gap-3 align-items-center">
-              <img src="./images/carousel-image.png" className="d-block w-50" alt="..." />
-
-              <div className="w-50 d-block align-items-center">
-                <p className="d-flex justify-content-left gap-3">
-                  <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
-                  <span className='text-dark'>|</span>
-                  <span className='fw-bold text-dark'>XYZ Tech Solutions</span>
-                </p>
-
-                <span className="carousel-text">
-                  “The experts on RecruitAngle are the best of the best! They’ve made our hiring process smooth and we don’t need to vet candidates ourselves. This has been an amazing experience.”
-                </span>
-              </div>
-              
-            </div>
-            
-            
-          </div>
-
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+        <Carousel />
       </section>
 
       <section className="section-7 row mb-5 d-flex justify-content-center align-items-center">
@@ -253,37 +179,8 @@ const Home = () => {
       </section>
 
       <section className="section-8">
-        <h3 className="fw-bold crimson-pro">Featured Experts</h3>
-
-        <div className="card-container">
-          <div className="card text-center">
-            <img src="./images/face.png" alt="" className="card-img" />
-            <h5 className="card-title text-dark">Mr John Smith</h5>
-            <span className='card-text mb-4'>Architectural Engineer</span>
-            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
-          </div>
-
-          <div className="card text-center">
-            <img src="./images/face.png" alt="" className="card-img" />
-            <h5 className="card-title text-dark">Mr John Smith</h5>
-            <span className='card-text mb-4'>Architectural Engineer</span>
-            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
-          </div>
-
-          <div className="card text-center">
-            <img src="./images/face.png" alt="" className="card-img" />
-            <h5 className="card-title text-dark">Mr John Smith</h5>
-            <span className='card-text mb-4'>Architectural Engineer</span>
-            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
-          </div>
-
-          <div className="card text-center">
-            <img src="./images/face.png" alt="" className="card-img" />
-            <h5 className="card-title text-dark">Mr John Smith</h5>
-            <span className='card-text mb-4'>Architectural Engineer</span>
-            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
-          </div>
-        </div>
+        <h3 className="fw-bold crimson-pro mb-3">Featured Experts</h3>
+        <ExpertsCard />
       </section>
     </div>
   )

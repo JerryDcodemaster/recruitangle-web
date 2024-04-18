@@ -134,7 +134,7 @@ const Footer = () => {
               </button>
             </div>
 
-            <span className='poppins-font'>
+            <span className='poppins-font-footer'>
               Hello fam, would you like to get emails regarding our products and services, updates and changes? Subscribe to our Newsletter. 
             </span>
           </div>

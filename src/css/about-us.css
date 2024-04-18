@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-hero-section {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: url(../../public/images/about/bg-main.png);
+    background-color: #fff;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+}
+
+.crimson-font {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 35.56px;
+    font-style: normal;
+    font-size: 32px;
+    color: black;
+}
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    margin: 15px 0 40px 0;
+    max-width: 677px;
+    height: 48px;
+}
+
+.about-hero-img {
+    width: 266px;
+    height: 56px;
+    margin: 0 30px;
+}
+
+.second-img {
+    width: 106px;
+    height: 109px;
+    margin-bottom: -230px;
+    margin-left: 40px;
+}
+
+.third-img {
+    width: 90px;
+    height: 30px;
+    margin-top: -130px;
+    margin-left: 215px;
+}
+
+.fourth-img {
+    width: 24.21px;
+    height: 78.35px;
+    margin-top: 350px;
+    margin-left: -150px;
+}
+
+.welcome-section {
+    padding: 20px 50px;
+}
+
+.crimson-header-text {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: 35.56px;
+    font-style: normal;
+    font-size: 32px;
+    color: black;
+}
+
+/* .subtext {
+    width: 612px;
+    height: 384px;
+} */
+
+.poppins-subtext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    /* max-width: 677px;
+    height: 48px; */
+}
+
+.welcome-1 {
+    width: 294px;
+    height: 321px;
+    border-radius: 8px;
+}
+
+.welcome-2 {
+    margin-top: -220px;
+    margin-left: 190px;
+    width: 293px;
+    height: 354px;
+    border-radius: 8px;
+}
+
+.vision-mission {
+    padding: 70px 80px;
+    background: url(../../public/images/about/vision.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 576px;
+    margin-bottom: 40px;
+}
+
+.vision-headtext {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    line-height: 35.56px;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.mission-headtext {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    line-height: 35.56px;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.vision-subtext {
+    width: 611px;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.mission-subtext {
+    width: 611px;
+    height: 120px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.value-section {
+    padding: 40px 70px;
+    background: #F7E5D0;
+    height: 300px;
+}
+
+.value-headtext {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    line-height: 35.56px;
+    font-size: 32px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.value-subtext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.team {
+    padding: 50px 50px;
+}
+
+.team-headtext {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 35.56px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-cards {
+   text-align: center;
+
+}
+
+.team-card img {
+    width: 294px;
+    height: 301px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.team-card h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.team-card small {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 17.78px;
+    color: #FF7F50;
+}
+
+
+@media screen and (max-width: 900px) {
+    .second-img {
+        width: 106px;
+        height: 109px;
+        margin-bottom: -250px;
+        margin-left: -240px;
+    }
+    
+    .third-img {
+        width: 90px;
+        height: 30px;
+        margin-top: -130px;
+        margin-left: 190px;
+    }
+    
+    .fourth-img {
+        width: 24.21px;
+        height: 78.35px;
+        margin-top: 350px;
+        margin-left: -140px;
+    }
+
+    .value-section {
+        height: 370px;
+    }
+
+    .team-card {
+        margin-bottom: 30px;
+    }
+
+    .team-card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .poppins-font {
+        text-align: left;
+    }
+
+    .about-hero-img {
+        margin: 0;
+    }
+
+    .second-img,
+    .third-img,
+    .fourth-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .about-hero-section {
+        background: none;
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .poppins-font {
+        width: 300px;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 15px;
+    }
+
+    .crimson-font {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .about-hero-img {
+        margin-left: 20px;
+    }
+
+    .vision-mission {
+        padding: 70px 40px;
+        height: 800px;
+    }
+
+    .vision-subtext {
+        width: auto;
+        margin-bottom: 120px;
+    }
+
+    .mission-subtext {
+        width: auto;
+    }
+
+    .value-section {
+        height: 550px;
+    }
+
+    .value-subtext {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .value-subtext {
+        line-height: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .vision-mission {
+        height: 820px;
+    }
+
+    .value-subtext {
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .value-section {
+        height: 570px;
+    }
+
+    .team-card img {
+        height: 80%;
+    }
+}

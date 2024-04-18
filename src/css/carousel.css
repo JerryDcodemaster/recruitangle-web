@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+.rita {
+    color: #7A7A7A;
+}
+
+.carousel-text {
+    font-size: 25px;
+    color: #213402;
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: light;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+@media screen and (max-width:900px) {
+    .carousel-slider img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .carousel-text {
+        font-size: 15px;
+    }
+
+    .company-carousel-text,
+    .rita {
+        font-size: 13px;
+    }
+    .btw {
+        display: none;
+    }
+}
