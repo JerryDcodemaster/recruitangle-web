@@ -88,6 +88,7 @@
 }
 
 .hero-section .popular-tags .tags {
+  margin-left: -20px;
   list-style: none;
   display: flex;
   gap: 10px;

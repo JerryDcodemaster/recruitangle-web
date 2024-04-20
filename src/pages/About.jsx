@@ -21,7 +21,7 @@ const About = () => {
       
       <section className="row welcome-section mb-3">
         <div className="col d-none d-xl-block welcome-img">
-          <img className='welcome-1' src="./images/about/welcome1.png" alt="" />
+          <img className='welcome-1' src="./images/about/welcome1.png" alt="" />  
           <img className='welcome-2' src="./images/about/welcome2.png" alt="" />
         </div>
         <div className="col welcome-text">
