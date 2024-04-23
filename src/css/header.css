@@ -1,5 +1,4 @@
 header {
-    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
@@ -126,5 +125,12 @@ header .navbar {
     .navbar .menu-links .join-btn a:hover {
         background: #FF7F50;
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 70px;
+        padding: 15px;
     }
 }

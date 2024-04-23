@@ -7,6 +7,13 @@ body {
     box-sizing: border-box;
 }
 
+.pricing-div {
+    background-image: url(../../public/images/herobg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;

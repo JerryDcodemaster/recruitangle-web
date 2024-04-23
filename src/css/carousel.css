@@ -17,6 +17,13 @@
         "WONK" 0;
 }
 
+.swiper-button-prev {
+    color: #FF7F50;
+}
+.swiper-button-next {
+    color: #FF7F50;
+}
+
 @media screen and (max-width:900px) {
     .carousel-slider img {
         margin-bottom: 20px;

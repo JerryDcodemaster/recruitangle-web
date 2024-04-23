@@ -10,12 +10,9 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-
-  
     background: url(../../public/images/about/fill-1.png);
     background-color: #fff;
     background-size: 100px;
-    /* height: 400px; */
     background-repeat: no-repeat;
     background-position: right top;
     background-origin: content-box;
@@ -336,28 +333,13 @@
     
     .expert-section .content :is(h1, .search-form) {
         max-width: 100%;
+        color: #fff;
     }
     
     h1 {
         text-align: center;
         font-size: 2.5rem;
         line-height: 55px;
-    }
-    
-    .expert-section .search-form {
-        display: block;
-        margin-top: 20px;
-    }
-    
-    .expert-section .search-form input {
-        border-radius: 4px;
-    }
-    
-    .expert-section .search-form button {
-        width: 100%;
-        margin-top: 10px;
-        /* margin-bottom: 30px; */
-        border-radius: 4px;
     }
 
     .expert-section .popular-tags {
@@ -384,6 +366,17 @@
 
     .contact-form .form-label {
         font-size: 15px;
+    }
+
+    .expert-section {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 30px 20px 50px 20px;
+        background: linear-gradient(180deg,#003912 36.72%,#19aa64 141.43%)
+    }
+
+    .expert-section .content {
+        margin-bottom: 0;
     }
 }
 
