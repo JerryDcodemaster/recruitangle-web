@@ -243,3 +243,13 @@ ul {
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .mail-box {
+    margin-top: 0;
+  }
+
+  .t1 {
+    display: none;
+  }
+}

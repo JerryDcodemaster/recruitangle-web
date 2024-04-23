@@ -83,7 +83,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="row split">
-          <div className="col-md-8 footer-row">
+          <div className="col-md-8 footer-row d-none d-md-flex">
             <div className="footer-col">
               <h4>product</h4>
               <ul>
@@ -143,10 +143,16 @@ const Footer = () => {
         <div className='terms-icon-cont d-block d-md-flex mb-5 justify-content-between align-items-center'>
           <div></div>
           
-          <div className='terms'>
+          <div className='terms t1'>
             <a href="#">Terms</a>
             <a href="#">Privacy</a>
             <a href="#">Cookies</a>
+          </div>
+
+          <div className='terms d-md-none'>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
           </div>
           
           <div className='social-links'>
