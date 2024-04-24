@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/about-us.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const About = () => {
   return (
@@ -9,20 +10,20 @@ const About = () => {
           <h2 className="crimson-font">Dedicated Teams.</h2>
           <h2 className="crimson-font">For Your Dedicated Dreams</h2>
           <p className='poppins-font'>We Provide the best recruitment service for Jobseekers and Recruiters to help make smarter hiring decisions.</p>
-          <img className='about-hero-img' src="./images/about/about-hero-img.png" alt="" />
+          <LazyLoadImage className='about-hero-img' src="./images/about/about-hero-img.png" loading='lazy' alt="" />
         </div>
 
         <div className="hero-background-img w-50 d-flex align-items-center">
-          <img className='second-img' src="./images/about/fill-1.png" alt="" />
-          <img className='third-img' src="./images/about/fill-2.png" alt="" />
-          <img className='fourth-img' src="./images/about/fill-3.png" alt="" />
+          <LazyLoadImage className='second-img' src="./images/about/fill-1.png" loading='lazy' alt="" />
+          <LazyLoadImage className='third-img' src="./images/about/fill-2.png" loading='lazy' alt="" />
+          <LazyLoadImage className='fourth-img' src="./images/about/fill-3.png" loading='lazy' alt="" />
         </div>
       </header>
       
       <section className="row welcome-section mb-3">
-        <div className="col d-none d-xl-block welcome-img">
-          <img className='welcome-1' src="./images/about/welcome1.png" alt="" />  
-          <img className='welcome-2' src="./images/about/welcome2.png" alt="" />
+        <div className="col d-none d-xl-block welcome-LazyLoadImage">
+          <LazyLoadImage className='welcome-1' src="./images/about/welcome1.png" loading='lazy' alt="" />  
+          <LazyLoadImage className='welcome-2' src="./images/about/welcome2.png" loading='lazy' alt="" />
         </div>
         <div className="col welcome-text">
           <h2 className='crimson-header-text mb-3'>Meet Recruitangle</h2>
@@ -74,22 +75,22 @@ const About = () => {
         <h2 className="team-headtext">Meet our Team</h2>
         <div className="row team-cards">
           <div className="col-xl-3 col-md-6 team-card">
-            <img src="./images/about/person1.png" alt="1st Person" />
+            <LazyLoadImage src="./images/about/person1.png" loading='lazy' alt="1st Person" />
             <h2>Sarah Lobey</h2>
             <small>Founder & CEO</small>
           </div>
           <div className="col-xl-3 col-md-6 team-card">
-            <img src="./images/about/person2.png" alt="2nd Person" />
+            <LazyLoadImage src="./images/about/person2.png" loading='lazy' alt="2nd Person" />
             <h2>Mike Owen</h2>
             <small>Chief Technology Officer</small>
           </div>
           <div className="col-xl-3 col-md-6 team-card">
-            <img src="./images/about/person3.png" alt="3rd Person" />
+            <LazyLoadImage src="./images/about/person3.png" loading='lazy' alt="3rd Person" />
             <h2>Jinny Buehner</h2>
             <small>Marketing Manager</small>
           </div>
           <div className="col-xl-3 col-md-6 team-card">
-            <img src="./images/about/person4.png" alt="" />
+            <LazyLoadImage src="./images/about/person4.png" loading='lazy' alt="" />
             <h2>Lucas Grabowska</h2>
             <small>Finance Manager</small>
           </div>

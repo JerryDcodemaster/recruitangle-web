@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import '../css/header.css';
 
 const Header = () => {
 
     const header = document.querySelector("header");
     const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const typedText = document.querySelector(".type-text");
 
     const [isActive, setIsActive] = useState(false);
 
@@ -22,60 +22,10 @@ const Header = () => {
     }
 
     return (
-
-        // <nav className='navbar navbar-expand-lg'>
-        //     <div className='container-sm'>
-        //         <Link to='/'>
-        //             <img className='navbar-brand logo' src="./images/logo.png" alt="" />
-        //         </Link>
-               
-        //         <button 
-        //           className="navbar-toggler" 
-        //           type="button" 
-        //           data-bs-toggle="collapse" 
-        //           data-bs-target="#navmenu"
-        //         >
-        //         <span className="navbar-toggler-icon"></span>
-        //         </button>
-
-        //         <div className="collapse navbar-collapse" id="navmenu">
-        //             <ul className="navbar-nav">
-        //                 <li className="nav-item">
-        //                     <Link to="/" className="nav-link poppins-medium">Home</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link to="/pricing" className="nav-link poppins-medium">Pricing</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link to="/about" className="nav-link poppins-medium">About us</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link to="/experts" className="nav-link poppins-medium">Join as Expert</Link>
-        //                 </li>
-        //             </ul>
-        //         </div>
-
-        //         <div className="d-flex justify-content-center gap-1 header-btn">
-        //             <button className='sign-in'><Link className='a-1' to="#!">Sign in</Link></button>
-        //             <button className='join-now'><Link className='a-2' to="#!">Join now</Link></button>
-        //         </div>
-
-        //         <select className='p-1 ms-5'>
-        //             <option selected>EN</option>
-        //             <option>BE</option>
-        //             <option>BG</option>
-        //             <option>CY</option>
-        //             <option>CS</option>
-        //             <option>DE</option>
-        //             <option>EL</option>
-        //         </select>
-        //     </div>
-        // </nav>
-
         <header>
             <nav className="navbar">
                 <a href="#" className="header-logo">
-                    <img src="images/logo.png" alt="Recruitangle Logo" />
+                    <LazyLoadImage src="images/logo.png" loading='lazy' alt="Recruitangle Logo" />
                 </a>
         
                 <ul className="menu-links">
@@ -94,7 +44,6 @@ const Header = () => {
                     <li className="join-btn"><a href="#">Join now</a></li>
                 </ul>
 
-                {/* <button className={isActive ? 'show-mobile-menu' : ''}> */}
                 <span 
                     onClick={toggleClass} 
                     id="hamburger-btn" 
@@ -102,13 +51,9 @@ const Header = () => {
                 >
                     menu
                 </span>
-                {/* </button> */}
             </nav>
     </header>
     )
 }
-
-{/* <script src="../../script.js"></script> */}
-
 
 export default Header

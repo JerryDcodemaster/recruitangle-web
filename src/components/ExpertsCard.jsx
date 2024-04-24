@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default () => {
   return (
@@ -37,7 +38,7 @@ export default () => {
     >
       <SwiperSlide>
         <div className="card text-center">
-          <img src="./images/face.png" alt="" className="card-img" />
+          <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
           <h5 className="card-title text-dark">Mr John Smith</h5>
           <span className='card-text mb-4'>Architectural Engineer</span>
           <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
@@ -46,7 +47,7 @@ export default () => {
       
       <SwiperSlide>
         <div className="card text-center">
-           <img src="./images/face.png" alt="" className="card-img" />
+           <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
            <h5 className="card-title text-dark">Mr John Smith</h5>
            <span className='card-text mb-4'>Architectural Engineer</span>
            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
@@ -55,7 +56,7 @@ export default () => {
       
       <SwiperSlide>
         <div className="card text-center">
-           <img src="./images/face.png" alt="" className="card-img" />
+           <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
            <h5 className="card-title text-dark">Mr John Smith</h5>
            <span className='card-text mb-4'>Architectural Engineer</span>
            <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
@@ -64,7 +65,7 @@ export default () => {
 
       <SwiperSlide>
         <div className="card text-center">
-          <img src="./images/face.png" alt="" className="card-img" />
+          <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
           <h5 className="card-title text-dark">Mr John Smith</h5>
           <span className='card-text mb-4'>Architectural Engineer</span>
           <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
@@ -73,7 +74,7 @@ export default () => {
 
       <SwiperSlide>
         <div className="card text-center">
-          <img src="./images/face.png" alt="" className="card-img" />
+          <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
           <h5 className="card-title text-dark">Mr John Smith</h5>
           <span className='card-text mb-4'>Architectural Engineer</span>
           <button className='session'><a className='a-session' href="#!">Book a Session</a></button>
@@ -82,7 +83,7 @@ export default () => {
 
       <SwiperSlide>
         <div className="card text-center">
-          <img src="./images/face.png" alt="" className="card-img" />
+          <LazyLoadImage src="./images/face.png" loading='lazy' alt="" className="card-img" />
           <h5 className="card-title text-dark">Mr John Smith</h5>
           <span className='card-text mb-4'>Architectural Engineer</span>
           <button className='session'><a className='a-session' href="#!">Book a Session</a></button>

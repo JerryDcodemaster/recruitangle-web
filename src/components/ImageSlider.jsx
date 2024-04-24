@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'swiper/css/navigation';
 import 'swiper/css';
 
@@ -36,34 +37,34 @@ export default () => {
     }}
     >
       <SwiperSlide>
-        <img src="./images/cards/card-1.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-1.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-2.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-2.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-3.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-3.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-4.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-4.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-5.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-5.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-6.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-6.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-7.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-7.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-8.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-8.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-9.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-9.png" loading='lazy' alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="./images/cards/card-10.png" alt="" />
+        <LazyLoadImage src="./images/cards/card-10.png" loading='lazy' alt="" />
       </SwiperSlide>
     </Swiper>
   );

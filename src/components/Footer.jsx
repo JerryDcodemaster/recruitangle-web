@@ -1,85 +1,10 @@
 import React from 'react';
 import '../css/footer.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    // <div className="footer row">
-    //   <div className="col-xl col-md-6">
-    //     <table className="table table-sm table-borderless">
-    //       <thead>
-    //         <tr>
-    //           <th scope="col">Product</th>
-    //           <th scope="col">Information</th>
-    //           <th scope="col">Company</th>
-    //         </tr>
-    //       </thead>
-    //       <tbody>
-    //         <tr>
-    //           <td>Interviews</td>
-    //           <td>FAQs</td>
-    //           <td>About us</td>
-    //         </tr>
-    //         <tr>
-    //           <td>Career advice</td>
-    //           <td>Blog</td>
-    //           <td>Careers</td>
-    //         </tr>
-    //         <tr>
-    //           <td>Recruiters</td>
-    //           <td>Support</td>
-    //           <td>Contact us</td>
-    //         </tr>
-    //         <tr>
-    //           <td>Experts</td>
-    //         </tr>
-    //         <tr>
-    //           <td>Pricing</td>
-    //         </tr>
-    //       </tbody>
-    //     </table>
-
-    //     {/* <div className="row mb-3">
-    //       <span className="col fw-bold">Product</span>
-    //       <span className="col fw-bold">Information</span>
-    //       <span className="col fw-bold">Company</span>
-    //     </div>
-
-    //     <div className="row mb-2">
-    //       <span className="col">Interviews</span>
-    //       <span className="col">Blog</span>
-    //       <span className="col">About us</span>
-    //     </div>
-
-    //     <div className="row mb-2">
-    //       <span className="col">Career advice</span>
-    //       <span className="col">FAQs</span>
-    //       <span className="col">Careers</span>
-    //     </div>
-
-    //     <div className="row mb-2">
-    //       <span className="col">Recruiters</span>
-    //       <span className="col">FAQs</span>
-    //       <span className="col">Careers</span>
-    //     </div>
-
-    //     <div className="row mb-2">
-    //       <span className="col">Career advice</span>
-    //       <span className="col">Support</span>
-    //       <span className="col">Contact us</span>
-    //     </div>
-
-    //     <div className="row mb-2">
-    //       <span className="col">Experts</span>
-    //     </div>
-
-    //     <div className="row">
-    //       <span className="col">Pricing</span>
-    //     </div> */}
-    //   </div>
-    //   <div className="col-xl col-md-6">Hello</div>
-    // </div>
-
     <footer className="footer">
       <div className="footer-container">
         <div className="row split">
@@ -112,16 +37,6 @@ const Footer = () => {
                 <li><a href="#">contact us</a></li>
               </ul>
             </div>
-
-            {/* <div className="footer-col">
-              <h4>follow us</h4>
-              <div className='social-links'>
-                <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a href="#"><i className="fab fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i> </a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-              </div>
-            </div> */}
           </div>
 
           <div className='col mail-box'>
@@ -164,7 +79,7 @@ const Footer = () => {
         </div>
 
         <Link className='footer-logo' to='/'>
-          <img className='logo' src="./images/logo.png" alt="" />
+          <LazyLoadImage className='logo' src="./images/logo.png" loading='lazy' alt="" />
         </Link>
       </div>
     </footer>

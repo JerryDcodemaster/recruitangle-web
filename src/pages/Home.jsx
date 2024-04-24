@@ -3,6 +3,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import ImageSlider from '../components/ImageSlider';
 import Carousel from '../components/Carousel';
 import ExpertsCard from '../components/ExpertsCard';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Image1 from '../bg-home1.png'
 import Image2 from '../bg-home2.png'
 import Image3 from '../bg-home3.png'
@@ -71,17 +73,17 @@ const Home = () => {
                 </ul>
             </div>
         </div>
-        {/* <img src="./images/bg-home1.png" alt="" /> */}
-        <img src={images[currentIndex]} />
+        {/* <LazyLoadImage src="./images/bg-home1.png" alt="" /> */}
+        <LazyLoadImage src={images[currentIndex]} loading='lazy' effect='blur' />
       </section>
 
       <section className="brand-companies container d-flex justify-content-center align-items-center gap-0 gap-md-3 gap-xl-5">
         <span className='brand-relative'>Trusted by:</span>
-        <img src="./images/companies-brand/meta.png" alt="meta" />
-        <img src="./images/companies-brand/google.png" alt="google" />
-        <img src="./images/companies-brand/netflix.png" alt="netflix" />
-        <img src="./images/companies-brand/pg.png" alt="pg" />
-        <img src="./images/companies-brand/paypal.png" alt="paypal" />
+        <LazyLoadImage src="./images/companies-brand/meta.png" loading='lazy' alt="meta" />
+        <LazyLoadImage src="./images/companies-brand/google.png" loading='lazy' alt="google" />
+        <LazyLoadImage src="./images/companies-brand/netflix.png" loading='lazy' alt="netflix" />
+        <LazyLoadImage src="./images/companies-brand/pg.png" loading='lazy' alt="pg" />
+        <LazyLoadImage src="./images/companies-brand/paypal.png" loading='lazy' alt="paypal" />
       </section>
       
       <section className='section-2 mb-5'>
@@ -93,13 +95,13 @@ const Home = () => {
         <section className="row mb-4 gap-3">
           <div className="col-xl-6">
             <h2 className="fw-bold crimson-pro mb-5">What we have to offer?</h2>
-            <img className='mb-2' src="./images/1txt.png" alt="" />
-            <img className='mb-2' src="./images/2txt.png" alt="" />
-            <img className='mb-2' src="./images/3txt.png" alt="" />
-            <img src="./images/4txt.png" alt="" />
+            <LazyLoadImage className='mb-2' src="./images/1txt.png" loading='lazy' alt="" />
+            <LazyLoadImage className='mb-2' src="./images/2txt.png" loading='lazy' alt="" />
+            <LazyLoadImage className='mb-2' src="./images/3txt.png" loading='lazy' alt="" />
+            <LazyLoadImage src="./images/4txt.png" loading='lazy' alt="" />
           </div>
 
-          <img className='col h-md-25' src="./images/bg-sec3.png" alt="" />
+          <LazyLoadImage loading='lazy' className='col h-md-25' src="./images/bg-sec3.png" alt="" />
         </section>
 
         <button class="get-started-offerbtn" type="button">
@@ -111,37 +113,37 @@ const Home = () => {
         <h2 className="fw-bold crimson-pro mb-5 sect-4-txt">We've got the Experts you need</h2>
         <div class="row card-row-1">
           <div className="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b1.png" alt="" />
+            <LazyLoadImage src="./images/brands/b1.png" loading='lazy' alt="" />
           </div>
           <div className="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b2.png" alt="" />
+            <LazyLoadImage src="./images/brands/b2.png" loading='lazy' alt="" />
           </div>
           <div className="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b3.png" alt="" />
+            <LazyLoadImage src="./images/brands/b3.png" loading='lazy' alt="" />
           </div>
           <div className="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b4.png" alt="" />
+            <LazyLoadImage src="./images/brands/b4.png" loading='lazy' alt="" />
           </div>
           <div className="col-xl col-md col-12 card-logo">
-            <img src="./images/brands/b5.png" alt="" />
+            <LazyLoadImage src="./images/brands/b5.png" loading='lazy' alt="" />
           </div>
         </div>
 
         <div class="row card-row-2">
           <div class="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b6.png" alt="" />
+            <LazyLoadImage src="./images/brands/b6.png" loading='lazy' alt="" />
           </div>
           <div class="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b7.png" alt="" />
+            <LazyLoadImage src="./images/brands/b7.png" loading='lazy' alt="" />
           </div>
           <div class="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b8.png" alt="" />
+            <LazyLoadImage src="./images/brands/b8.png" loading='lazy' alt="" />
           </div>
           <div class="col-xl col-md col-6 card-logo">
-            <img src="./images/brands/b9.png" alt="" />
+            <LazyLoadImage src="./images/brands/b9.png" loading='lazy' alt="" />
           </div>
           <div class="col-xl col-md col-12 card-logo">
-            <img src="./images/brands/b10.png" alt="" />
+            <LazyLoadImage src="./images/brands/b10.png" loading='lazy' alt="" />
           </div>
         </div>
       </section>
@@ -150,11 +152,11 @@ const Home = () => {
         <section className="row section-5 mb-0 d-flex">
           <div className='col-xl-6'>
             <h4 className="fw-bold crimson-pro-black">Revolutionized Recruitment</h4>
-            <img className='w-50 py-4' src="./images/ensure.png" alt="" />
-            <img className='w-100' src="./images/down-ex.png" alt="" />
+            <LazyLoadImage className='w-50 py-4' src="./images/ensure.png" loading='lazy' alt="" />
+            <LazyLoadImage className='w-100' src="./images/down-ex.png" loading='lazy' alt="" />
           </div>
 
-          <img className='col' src="./images/sec5-img.png" alt="" />
+          <LazyLoadImage className='col' src="./images/sec5-img.png" loading='lazy' alt="" />
         </section>
 
         <div class="getstarted">
@@ -175,7 +177,7 @@ const Home = () => {
           <button className='join-now'><a className='a-2' href="#!">Join now</a></button>
         </div>
         
-        <img src="./images/unsplash.png" alt="" className="col-xl col-md" />
+        <LazyLoadImage src="./images/unsplash.png" alt="" loading='lazy' className="col-xl col-md" />
       </section>
 
       <section className="section-8">

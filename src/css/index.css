@@ -34,7 +34,7 @@
 }
 
 .hero-section img {
-  width: 35rem;
+  width: 60rem;
   transition: 0.3s;
 }
 
@@ -523,7 +523,6 @@
   .hero-section .search-form button {
       width: 100%;
       margin-top: 10px;
-      /* margin-bottom: 30px; */
       border-radius: 4px;
   }
 

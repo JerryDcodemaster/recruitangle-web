@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/expert.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Expert = () => {
   return (
@@ -22,42 +23,41 @@ const Expert = () => {
                 </ul>
             </div>
           </div>
-          {/* <img src="./images/about/fill-2.png" alt="" /> */}
       </section>
 
       <section className="categories-section">
         <h2>Search by Categories</h2>
         <div className='row gap-4 expertbox-container'>
           <div className="box col-3">
-            <img src="./images/about/user.png" alt="" />
+            <LazyLoadImage src="./images/about/user.png" loading='lazy' alt="" />
             <span>Your Recruitangle Account</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/shopping-basket-02.png" alt="" />
+            <LazyLoadImage src="./images/about/shopping-basket-02.png" loading='lazy' alt="" />
             <span>Booking a session</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/notebook.png" alt="" />
+            <LazyLoadImage src="./images/about/notebook.png" loading='lazy' alt="" />
             <span>Bookings Management</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/wallet-01.png" alt="" />
+            <LazyLoadImage src="./images/about/wallet-01.png" loading='lazy' alt="" />
             <span>Payment & Withdrawals</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/security-validation.png" alt="" />
+            <LazyLoadImage src="./images/about/security-validation.png" loading='lazy' alt="" />
             <span>Regulations & Guidelines</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/wallet-done-02.png" alt="" />
+            <LazyLoadImage src="./images/about/wallet-done-02.png" loading='lazy' alt="" />
             <span>Refunds</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/security-lock.png" alt="" />
+            <LazyLoadImage src="./images/about/security-lock.png" loading='lazy' alt="" />
             <span>Trust and Safety</span>
           </div>
           <div className="box col-3">
-            <img src="./images/about/laptop-video.png" alt="" />
+            <LazyLoadImage src="./images/about/laptop-video.png" loading='lazy' alt="" />
             <span>Becoming an Expert</span>
           </div>
         </div>
@@ -69,11 +69,11 @@ const Expert = () => {
           <span>We’re here to help.</span>
 
           <p className='mail mt-5'>
-            <img src="./images/about/mail.png" alt="" />
+            <LazyLoadImage src="./images/about/mail.png" loading='lazy' alt="" />
             info@recruitangle.com
           </p>
           <p className='call'>
-            <img src="./images/about/call.png" alt="" />
+            <LazyLoadImage src="./images/about/call.png" loading='lazy' alt="" />
             Support (+234) 905 4435 232 
           </p>
         </div>
@@ -119,7 +119,6 @@ const Expert = () => {
             <div className="col-auto">
               <button type="submit" className="mb-3 msg-btn">Send Message</button>
             </div>
-
           </div>
         </div>
       </section>
