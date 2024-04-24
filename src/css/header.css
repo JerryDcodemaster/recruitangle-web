@@ -1,3 +1,18 @@
+.select-language {
+    background: none;
+    cursor: pointer !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #7A7A7A;
+    transition: 0.2s ease;
+}
+
+.navbar .menu-links .select-language:hover {
+    color: #FF7F50;
+}
+
 header {
     left: 0;
     top: 0;

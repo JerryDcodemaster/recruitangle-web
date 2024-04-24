@@ -37,7 +37,15 @@ const Header = () => {
                     <li className="language-item">
                         <a href="#">
                             <span className="material-symbols-outlined">language</span>
-                            English
+                            
+                            <select className='select-language'>
+                                <option selected>EN</option>
+                                <option value="1">AR</option>
+                                <option value="2">BE</option>
+                                <option value="3">BG</option>
+                                <option value="3">DE</option>
+                                <option value="3">DA</option>
+                            </select>
                         </a>
                     </li>
                     <li><a href="#">Sign In</a></li>
