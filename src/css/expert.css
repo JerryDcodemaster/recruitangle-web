@@ -6,6 +6,8 @@
 /* Expert Hero Section */
 
 .expert-section {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,8 +120,10 @@
 
 /* Categories section */
 .categories-section {
+    max-width: 1400px;
+    margin: 30px auto;
     padding: 20px 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;  */
 }
 
 .categories-section h2 {
@@ -174,6 +178,8 @@
 
 /* Contact Section */
 .contact-section {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     padding: 30px 50px;
     background: #EBFFE3;
@@ -393,4 +399,7 @@
         font-size: 15px;
         font-weight: bold;
     }
+}
+
+@media screen and (min-width: 1800px){
 }

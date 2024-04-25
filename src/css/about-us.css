@@ -8,6 +8,7 @@
 }
 
 .about-hero-section {
+    max-width: 1400px;
     padding: 20px 50px;
     display: flex;
     align-items: center;
@@ -71,6 +72,8 @@
 }
 
 .welcome-section {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 20px 50px;
 }
 
@@ -115,6 +118,7 @@
 }
 
 .vision-mission {
+    max-width: 1400px;
     padding: 70px 80px;
     background: url(../../public/images/about/vision.png);
     background-size: cover;
@@ -168,6 +172,8 @@
 }
 
 .value-section {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 40px 70px;
     background: #F7E5D0;
     height: 300px;
@@ -193,6 +199,8 @@
 }
 
 .team {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 50px 50px;
 }
 
@@ -365,4 +373,15 @@
     .team-card img {
         height: 80%;
     }
+}
+
+@media screen and (min-width: 1800px){
+    .about-hero-section {
+        margin: 0 auto;
+    }
+
+    .vision-mission {
+        margin: 30px auto;
+    }
+    
 }
