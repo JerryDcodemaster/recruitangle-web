@@ -6,6 +6,22 @@ body {
     box-sizing: border-box;
 }
 
+.footer-logo {
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo span {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #05091E;
+  text-align: center;
+
+}
+
 .footer-container {
   max-width: 1170px;
   margin: auto;
@@ -202,13 +218,6 @@ ul {
     .terms {
         margin-bottom: 20px;
     }
-
-    .footer-logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -35px;
-    }
 }
 
 @media(max-width: 574px) {
@@ -225,10 +234,7 @@ ul {
         align-items: center;
     }
     .footer-logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -30px;
+        margin: 0 50px;
     }
     .arrow-btn {
       width: 50px;

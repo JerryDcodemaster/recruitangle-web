@@ -80,6 +80,7 @@ const Footer = () => {
 
         <Link className='footer-logo' to='/'>
           <LazyLoadImage className='logo' src="./images/logo.png" loading='lazy' alt="" />
+          <span>Recruitangle</span>
         </Link>
       </div>
     </footer>

@@ -26,6 +26,7 @@ const Header = () => {
             <nav className="navbar">
                 <a href="#" className="header-logo">
                     <LazyLoadImage src="images/logo.png" loading='lazy' alt="Recruitangle Logo" />
+                    <span>Recruitangle</span>
                 </a>
         
                 <ul className="menu-links">
