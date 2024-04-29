@@ -47,6 +47,7 @@ const Home = () => {
 
   return (
     <div>
+      <div className='bg-homepage'>
       <section class="hero-section mb-3">
         <div class="content">
             <h1 className='show-head-text-large'>Find the right <span class="multicolor-text">Expert</span></h1>
@@ -75,7 +76,7 @@ const Home = () => {
         </div>
         {/* <LazyLoadImage src="./images/bg-home1.png" alt="" /> */}
         <LazyLoadImage src={images[currentIndex]} loading='lazy' effect='blur' />
-      </section>
+      </section></div>
 
       <section className="brand-companies container d-flex justify-content-center align-items-center gap-0 gap-md-3 gap-xl-5">
         <span className='brand-relative'>Trusted by:</span>
@@ -92,7 +93,7 @@ const Home = () => {
       </section>
 
       <div className='section-3'>
-        <section className="row mb-4 gap-3">
+        <section className="row mb-4 gap-3 offerdiv">
           <div className="col-xl-6">
             <h2 className="fw-bold crimson-pro mb-5">What we have to offer?</h2>
             <LazyLoadImage className='mb-2' src="./images/1txt.png" loading='lazy' alt="" />
@@ -101,12 +102,14 @@ const Home = () => {
             <LazyLoadImage src="./images/4txt.png" loading='lazy' alt="" />
           </div>
 
-          <LazyLoadImage loading='lazy' className='col h-md-25' src="./images/bg-sec3.png" alt="" />
+          <LazyLoadImage loading='lazy' className='col h-md-25 offerdiv-img' src="./images/bg-sec3.png" alt="" />
         </section>
 
+        <div className='offer-btn-submit-div'>
         <button class="get-started-offerbtn" type="button">
           <a className='a-2' id='offer-btn' href="#!">Get Started</a>
         </button>
+        </div>
       </div>
 
       <section className="section-4">
@@ -149,7 +152,7 @@ const Home = () => {
       </section>
 
       <div className="section-5">
-        <section className="row section-5 mb-0 d-flex">
+        <section className="row section-5 mb-0 d-flex revodiv">
           <div className='col-xl-6'>
             <h4 className="fw-bold crimson-pro-black">Revolutionized Recruitment</h4>
             <LazyLoadImage className='w-50 py-4' src="./images/ensure.png" loading='lazy' alt="" />
@@ -159,7 +162,7 @@ const Home = () => {
           <LazyLoadImage className='col' src="./images/sec5-img.png" loading='lazy' alt="" />
         </section>
 
-        <div class="getstarted">
+        <div class="getstarted offer-btn-submit-div">
           <button class="get-started-revobtn" type="button">
             <a className='a-2' href="#!">Get Started</a>
           </button>
@@ -171,13 +174,13 @@ const Home = () => {
       </section>
 
       <section className="section-7 row mb-5 d-flex justify-content-center align-items-center">
-        <div className="col-xl col-sm-6 col-md">
+        <div className="col-xl col-sm-6 col-md recruitdiv">
           <span className="recruit-text">As a Recruiter</span>
           <p className="relax-text">Relax, while we handle recruiting for you</p>
           <button className='join-now'><a className='a-2' href="#!">Join now</a></button>
         </div>
         
-        <LazyLoadImage src="./images/unsplash.png" alt="" loading='lazy' className="col-xl col-md" />
+        <LazyLoadImage src="./images/unsplash.png" alt="" loading='lazy' className="col-xl col-md recruitimg" />
       </section>
 
       <section className="section-8">

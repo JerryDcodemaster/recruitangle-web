@@ -87,11 +87,6 @@
     color: black;
 }
 
-/* .subtext {
-    width: 612px;
-    height: 384px;
-} */
-
 .poppins-subtext {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -99,8 +94,6 @@
     font-size: 16px;
     color: black;
     line-height: 24px;
-    /* max-width: 677px;
-    height: 48px; */
 }
 
 .welcome-1 {
@@ -118,7 +111,6 @@
 }
 
 .vision-mission {
-    max-width: 1400px;
     padding: 70px 80px;
     background: url(../../public/images/about/vision.png);
     background-size: cover;
@@ -129,6 +121,8 @@
 }
 
 .vision-headtext {
+    max-width: 1400px;
+    margin: 0 auto;
     font-family: "Crimson Pro", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -139,6 +133,8 @@
 }
 
 .mission-headtext {
+    max-width: 1400px;
+    margin: 0 auto;
     font-family: "Crimson Pro", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -149,6 +145,7 @@
 }
 
 .vision-subtext {
+    max-width: 1400px;
     width: 611px;
     height: 120px;
     font-family: "Poppins", sans-serif;
@@ -172,7 +169,6 @@
 }
 
 .value-section {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 40px 70px;
     background: #F7E5D0;
@@ -180,6 +176,8 @@
 }
 
 .value-headtext {
+    max-width: 1400px;
+    margin: 0 auto;
     font-family: "Crimson Pro", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -190,6 +188,8 @@
 }
 
 .value-subtext {
+    max-width: 1400px;
+    margin: 0 auto;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -375,13 +375,29 @@
     }
 }
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 1500px){
     .about-hero-section {
         margin: 0 auto;
     }
 
     .vision-mission {
         margin: 30px auto;
+        height: 476px;
     }
     
+    .vision-subtext {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .mission-subtext {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .value-section {
+        height: 250px;
+    }
 }
+
+

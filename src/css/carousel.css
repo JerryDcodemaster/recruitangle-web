@@ -4,6 +4,17 @@
     color: #7A7A7A;
 }
 
+.carousel-slider {
+    max-width: 1400px;
+}
+
+.carousel-slider .carousel-img {
+    max-width: 700px;
+}
+.carousel-slider .carousel-sides {
+    max-width: 700px;
+}
+
 .carousel-text {
     font-size: 25px;
     color: #213402;

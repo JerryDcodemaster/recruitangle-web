@@ -15,6 +15,12 @@
 
 /* Hero Section */
 
+.bg-homepage {
+  background-image: url(../../public/images/herobg.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
 .hero-section {
   max-width: 1400px;
   margin: 0 auto;
@@ -25,9 +31,6 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  background-image: url(../../public/images/herobg.png);
-  background-repeat: no-repeat;
-  background-size: 65%;
 }
 
 .hero-section .content {
@@ -251,10 +254,20 @@
 }
 
 .section-3 {
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: rgb(235, 233, 234);
   padding: 30px 50px;
+}
+
+.offerdiv {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.revodiv {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .section-4 {
@@ -269,7 +282,6 @@
 }
 
 .section-5 {
-  max-width: 1400px;
   margin: 0 auto;
   background-color: #2D4044;
   padding: 30px 50px;
@@ -282,10 +294,17 @@
 }
 
 .section-7 {
-  max-width: 1400px;
   margin: 0 auto;
   background-color: #DEF6D5;
   padding: 30px 50px 0px 50px;
+}
+
+.recruitdiv {
+  max-width: 700px;
+}
+
+.recruitimg {
+  max-width: 700px;
 }
 
 .section-8 {
@@ -669,5 +688,15 @@
 
   .section-8 {
     padding: 30px 0px;
+  }
+
+  .offerdiv-img {
+    width: 500px;
+    /* margin: 0 auto; */
+  }
+
+  .offer-btn-submit-div {
+    width: 1400px;
+    margin: 0 auto;
   }
 }

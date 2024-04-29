@@ -15,9 +15,9 @@ const Carousel = () => {
       navigation
     >
       <SwiperSlide className='carousel-slider d-block d-xl-flex align-items-center gap-3'>
-        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50" loading='lazy' alt="..." />
+        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50 carousel-img" loading='lazy' alt="..." />
 
-        <div className="w-100 w-xl-50 d-block align-items-center">
+        <div className="w-100 w-xl-50 d-block align-items-center carousel-sides">
             <p className="d-flex justify-content-left gap-3">
                 <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
                 <span className='text-dark btw'>|</span>
@@ -31,9 +31,9 @@ const Carousel = () => {
       </SwiperSlide>
 
       <SwiperSlide className='carousel-slider d-block d-xl-flex align-items-center gap-3'>
-        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50" loading='lazy' alt="..." />
+        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50 carousel-img" loading='lazy' alt="..." />
 
-        <div className="w-100 w-xl-50 d-block align-items-center">
+        <div className="w-100 w-xl-50 d-block align-items-center carousel-sides">
             <p className="d-flex justify-content-left gap-3">
                 <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
                 <span className='text-dark btw'>|</span>
@@ -47,9 +47,9 @@ const Carousel = () => {
       </SwiperSlide>
 
       <SwiperSlide className='carousel-slider d-block d-xl-flex align-items-center gap-3'>
-        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50" loading='lazy' alt="..." />
+        <LazyLoadImage src="./images/carousel-image.png" className="d-block w-100 w-xl-50 carousel-img" loading='lazy' alt="..." />
 
-        <div className="w-100 w-xl-50 d-block align-items-center">
+        <div className="w-100 w-xl-50 d-block align-items-center carousel-sides">
             <p className="d-flex justify-content-left gap-3">
                 <span className='fw-light rita'>Rita Walter, Chief Technology Officer</span>
                 <span className='text-dark btw'>|</span>
