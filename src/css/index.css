@@ -18,7 +18,7 @@
 .bg-homepage {
   background-image: url(../../public/images/herobg.png);
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: 100%;
 }
 
 .hero-section {
@@ -261,6 +261,7 @@
 }
 
 .offerdiv {
+  /* display: flex !important; */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -712,7 +713,7 @@
   }
 
   .offerdiv-img {
-    width: 500px;
+    /* width: 500px; */
     /* margin: 0 auto; */
   }
 

@@ -93,8 +93,8 @@ const Home = () => {
       </section>
 
       <div className='section-3'>
-        <section className="row mb-4 gap-3 offerdiv">
-          <div className="col-sm-12 col-md">
+        <section className="d-block d-md-flex mb-4 offerdiv">
+          <div className="mb-3 mb-md-0">
             <h2 className="fw-bold crimson-pro mb-5">What we have to offer?</h2>
             <LazyLoadImage className='mb-2' src="./images/1txt.png" loading='lazy' alt="" />
             <LazyLoadImage className='mb-2' src="./images/2txt.png" loading='lazy' alt="" />
@@ -102,7 +102,7 @@ const Home = () => {
             <LazyLoadImage src="./images/4txt.png" loading='lazy' alt="" />
           </div>
 
-          <LazyLoadImage loading='lazy' className='col-sm-12 col-md h-md-25 offerdiv-img' src="./images/bg-sec3.png" alt="" />
+          <LazyLoadImage loading='lazy' className='col-sm-12 col-md-6 h-md-25 offerdiv-img' src="./images/bg-sec3.png" alt="" />
         </section>
 
         <div className='offer-btn-submit-div'>
@@ -152,14 +152,14 @@ const Home = () => {
       </section>
 
       <div className="section-5">
-        <section className="row revodiv">
-          <div className='col-sm-12 col-md mb-4'>
+        <section className="d-block d-md-flex revodiv">
+          <div className='col-sm-12 col-md-6 mb-4'>
             <h4 className="fw-bold crimson-pro-black">Revolutionized Recruitment</h4>
             <LazyLoadImage className='w-50 py-4' src="./images/ensure.png" loading='lazy' alt="" />
-            <LazyLoadImage className='w-100' src="./images/down-ex.png" loading='lazy' alt="" />
+            <LazyLoadImage src="./images/down-ex.png" loading='lazy' alt="" />
           </div>
 
-          <LazyLoadImage className='col-sm-12 col-md' src="./images/sec5-img.png" loading='lazy' alt="" />
+          <LazyLoadImage className='col-sm-12 col-md-6' src="./images/sec5-img.png" loading='lazy' alt="" />
         </section>
 
         <div class="getstarted offer-btn-submit-div">
