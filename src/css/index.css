@@ -18,7 +18,7 @@
 .bg-homepage {
   background-image: url(../../public/images/herobg.png);
   background-repeat: no-repeat;
-  background-size: 65%;
+  background-size: 85%;
 }
 
 .hero-section {
@@ -169,7 +169,6 @@
   display: flex;
   justify-content: center;
   align-self: right;
-  margin-left: 50px;
   border: none;
   border-radius: 10px;
   padding: 1rem 1rem;
@@ -229,7 +228,8 @@
 }
 
 .brand-companies {
-  max-width: 1400px;
+  background:#ececec;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -254,7 +254,7 @@
 }
 
 .section-3 {
-  max-width: 2000px;
+  /* max-width: 2000px; */
   margin: 0 auto;
   background-color: rgb(235, 233, 234);
   padding: 30px 50px;
@@ -385,7 +385,7 @@
 
 .relax-text {
   color: #206C00;
-  font-size: 30px;
+  font-size: 29px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -471,6 +471,13 @@
   }
 }
 
+@media(max-width: 950px) {
+  .relax-text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+}
 @media(max-width: 810px) {
   .card-container {
     display: block;
@@ -585,8 +592,17 @@
   }
 
   .get-started-revobtn {
-    width: 80%;
+    width: 100%;
     margin: auto;
+  }
+
+  .relax-text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .brand-companies {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -670,6 +686,11 @@
   .sect-4-txt {
     font-size: 26px;
     text-align: center;
+  }
+
+  .relax-text {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
