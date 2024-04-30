@@ -49,8 +49,8 @@ const Header = () => {
                             </select>
                         </a>
                     </li>
-                    <li><a href="#">Sign In</a></li>
-                    <li className="join-btn"><a href="#">Join now</a></li>
+                    <li><Link to="https://www.joinas.recruitangle.com/">Sign In</Link></li>
+                    <li className="join-btn"><Link to="https://www.joinas.recruitangle.com/">Join now</Link></li>
                 </ul>
 
                 <span 
