@@ -3,6 +3,7 @@ import { Navigation, A11y } from 'swiper/modules';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'swiper/css/navigation';
 import 'swiper/css';
+import '../css/img-slider.css'
 
 export default () => {
   return (
@@ -14,6 +15,10 @@ export default () => {
       navigation
       
     breakpoints={{
+        350: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        },
         375: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -27,7 +32,7 @@ export default () => {
         spaceBetween: 0,
         },
         768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 10,
         },
         1024: {
@@ -35,36 +40,56 @@ export default () => {
         spaceBetween: 15,
         },
     }}
-    >
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-1.png" loading='lazy' alt="" />
+    > 
+      <SwiperSlide className='imgslider-card1'>
+        <h2 className="slider-headtext">Personalized Growth Plan & Continuous Review</h2>
+        <p className='slider-subtext'>
+          Choose your field or role, develop a plan with an expert serving as your coach and continuously review it.
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-2.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card2'>
+        <h2 className="slider-headtext">Unlimited Coaching Hub</h2>
+        <p className="slider-subtext">
+          Accelerate your performance from hand-holding sessions with top experts in your field or role.
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-3.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card3'>
+        <h2 className="slider-headtext">On-demand interraction with experts/coaches</h2>
+        <p className="slider-subtext">
+          Do you have a burning question or issue to resolve? Sort it!
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-4.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card4'>
+        <h2 className="slider-headtext">One-on-One interview with Expert for Preparation</h2>
+        <p className="slider-subtext">
+          Do you have an upcoming intrview? Let our expert conduct a thorough interview on you for maximum performance out there!
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-5.png" loading='lazy' alt="" />
+
+      {/* 2nd set */}
+      <SwiperSlide className='imgslider-card2'>
+        <h2 className="slider-headtext">Unlimited Coaching Hub</h2>
+        <p className="slider-subtext">
+          Accelerate your performance from hand-holding sessions with top experts in your field or role.
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-6.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card1'>
+        <h2 className="slider-headtext">Personalized Growth Plan & Continuous Review</h2>
+        <p className='slider-subtext'>
+          Choose your field or role, develop a plan with an expert serving as your coach and continuously review it.
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-7.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card3'>
+        <h2 className="slider-headtext">On-demand interraction with experts/coaches</h2>
+        <p className="slider-subtext">
+          Do you have a burning question or issue to resolve? Sort it!
+        </p>
       </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-8.png" loading='lazy' alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-9.png" loading='lazy' alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <LazyLoadImage src="./images/cards/card-10.png" loading='lazy' alt="" />
+      <SwiperSlide className='imgslider-card4'>
+        <h2 className="slider-headtext">One-on-One interview with Expert for Preparation</h2>
+        <p className="slider-subtext">
+          Do you have an upcoming intrview? Let our expert conduct a thorough interview on you for maximum performance out there!
+        </p>
       </SwiperSlide>
     </Swiper>
   );

@@ -1,0 +1,64 @@
+.imgslider-card1 {
+    background-image: url(../../public/images/cards/popular-bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 350px;
+    padding: 20px !important;
+    border-radius: 10px;
+
+}
+.imgslider-card2 {
+    background-image: url(../../public/images/cards/popular-bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 350px;
+    padding: 20px !important;
+    border-radius: 10px;
+
+}
+.imgslider-card3 {
+    background-image: url(../../public/images/cards/popular-bg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 350px;
+    padding: 20px !important;
+    border-radius: 10px;
+
+}
+.imgslider-card4 {
+    background-image: url(../../public/images/cards/popular-bg4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 230px;
+    height: 350px;
+    padding: 20px !important;
+    border-radius: 10px;
+
+}
+
+.slider-headtext {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.0125em;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.slider-subtext {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+    text-align: left;
+    /* width: 248px;
+    height: 96px; */
+}
